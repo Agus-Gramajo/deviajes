@@ -86,7 +86,7 @@
     text-align:center;
     ul li{
         display:inline-block;
-        margin:0;
+        margin:3px 0;
         list-style:none;
         padding:10px 15px;
         cursor:pointer;
@@ -101,6 +101,11 @@
 	/*width:303px;*/
 	float:left;
 	margin-bottom:10px;
+}
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle, .btn-outline-dark:hover {
+    color: #fff;
+    background-color: $color-grey;
+    border-color: $color-grey;
 }
 .arrow-top {
     text-align: right;
