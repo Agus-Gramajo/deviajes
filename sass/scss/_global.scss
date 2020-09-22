@@ -307,3 +307,16 @@
         float: right;
     } 
 }
+/*Classes*/
+.banner-1 {
+    background-image: url(../../img/burano.jpg);
+    background-attachment: fixed;
+    height: 250px;
+    background-size: cover;
+    span {
+        font-size: 6rem;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-family: 'Caveat', cursive;
+    }
+}
