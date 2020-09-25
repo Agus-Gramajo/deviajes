@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- Estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="js/bootstrap.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -105,12 +105,11 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="card-promo border-0 transform-on-hover">
-                    <a class="lightbox" href="paquetes.html#canada">
                         <img src="./img/image1.jpg" alt="canada" class="card-img-top">
-                    </a>
                     <div class="card-body">
                         <h6><a href="paquetes.html#canada">Parques Nacionales de Canadá</a></h6>
-                        <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        <p class="text-muted card-text">Tour por Vancouver, Banff, Jasper, Campo Helado Columbia y las Rocosas de 8 días</p>
+                        <button type="button" class=" btn btn-success" data-toggle="modal" data-target="#modal-canada">Saber más...</button>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,8 @@
                     </a>
                     <div class="card-body">
                         <h6><a href="paquetes.html#tailandia">Tailandia</a></h6>
-                        <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        <p class="text-muted card-text">Tour por Bangkok, Chiang Mai, Chiang Rai y Phuket, recorriendo ciudades, montañas y playas. 12 días</p>
+                        <button type="button" class=" btn btn-success" data-toggle="modal" data-target="#modal-tai">Saber más...</button>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,8 @@
                     </a>
                     <div class="card-body">
                         <h6><a href="paquetes.html#china">China Imperial</a></h6>
-                        <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        <p class="text-muted card-text">Tour clásico de China de 9 días: Beijing, Xi'an y Shanghai recorriendo las ciudades más importantes del Imperio</p>
+                        <button type="button" class=" btn btn-success" data-toggle="modal" data-target="#modal-china">Saber más...</button>
                     </div>
                 </div>
             </div>
@@ -143,7 +144,8 @@
                     </a>
                     <div class="card-body">
                         <h6><a href="paquetes.html#paris">Paris</a></h6>
-                        <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        <p class="text-muted card-text">Conoce los secretos de la ciudad de la Luz en una semana. Incluye translados y entradas a museos!</p>
+                        <button type="button" class=" btn btn-success" data-toggle="modal" data-target="#modal-paris">Saber más...</button>
                     </div>
                 </div>
             </div>
@@ -154,18 +156,21 @@
                     </a>
                     <div class="card-body">
                         <h6><a href="paquetes.html#roma">Roma</a></h6>
-                        <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        <p class="text-muted card-text">Tour a los mas famosos monumentos de Roma. Conozca la Ciudad Eterna a través de sus pintorescas calles.</p>
+                        <button type="button" class=" btn btn-success" data-toggle="modal" data-target="#modal-roma">Saber más...</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card-promo border-0 transform-on-hover">
                     <a class="lightbox" href="paquetes.html#ny">
-                        <img src="./img/ny.jpg" alt="nueva yotk" class="card-img-top">
+                        <img src="./img/ny.jpg" alt="nueva york" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h6><a href="paquetes.html#ny">Nueva York</a></h6>
-                        <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                        <p class="text-muted card-text">Conoce emblemas como la Estatua de la Libertad, la Quinta Avenida o el Empire States y disfruta de días libres.
+                        </p>
+                        <button type="button" class=" btn btn-success" data-toggle="modal" data-target="#modal-ny">Saber más...</button>
                     </div>
                 </div>
             </div>
@@ -198,11 +203,16 @@
             <div class="col-md-2 footer-social animated fadeInDown">
                 <h4>Follow Us</h4>
                 <ul>
-                    <li><a href="www.facebook.com">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">RSS</a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/?lang=es"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="https://www.tripadvisor.com.ar/"><i class="fa fa-tripadvisor" aria-hidden="true"></i>
+                    </a></li>
                 </ul>
+                <img src="./img/footer/iata.png" alt="iata">
             </div>
             <div class="col-md-4 footer-ns animated fadeInRight">
                 <h4>Newsletter</h4>
@@ -220,27 +230,255 @@
             </div>
         </div>
     </footer>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Te suscribiste a nuestro newsletter</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+<!--Modal Canada-->
+<div class="modal fade" id="modal-canada" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="close-modal d-flex justify-content-end">
+                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
             </div>
-            <div class="modal-body">
-              Muchas gracias por sumarte a nuestro newsletter!<br>
-              Pronto vas a recibir novedades!
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><h3>PARQUES NACIONALES DE CANADÁ</h3></div>
+                    <div class="col-md-12 ml-auto"><span>Tour por Vancouver, Banff, Jasper, Campo Helado Columbia y las Rocosas de 8 días</span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <img src="./img/canada.jpg" alt="canada">
+                        <div class="d-flex flex-wrap align-items-start">
+                            <div class="modal-price col-md-8 align-items-center">
+                                <span>Desde USD</span>
+                                <span class="price">$1500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-6 ml-auto">
+                        <ul>
+                            <li><strong>Inicio /Final Ciudad:</strong><span>Seattle, Vancouver / Seattle, Vancouver</span></li>
+                            <li><strong>Duración: </strong><span></span>8 Dias</span></li>
+                            <li> <strong>Puntos Culminantes: </strong><span> Diviértase explorando los hermosos lugares en Vancouver. Visite el Lago Bow, el Campo Helado Columbia y el Parque Nacional Banff y vea lo major de la naturaleza. Tome un momento para admirar los espectaculares del Parque Nacional Glaciar.</span></li>
+                        </ul>
+                        <div class="col-md-12 align-content-center">
+                            <a href="mailto:info@deviajes.com?subject=Consulta%20Web%20por%20paquete%20Canada" class="btn btn-success">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <section class="copyright"><p>Designed by <a href="https://www.linkedin.com/in/agustina-gramajo-92840a5b/">Agustina Gramajo</a></p></section>
+    </div>
+</div>
+<!--Modal Tailandia-->
+<div class="modal fade" id="modal-tai" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="close-modal d-flex justify-content-end">
+                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><h3>TAILANDIA</h3></div>
+                    <div class="col-md-12 ml-auto"><span>Paquete Bangkok, Triángulo de Oro y Phuket. 12 días</span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <img src="./img/tai_baja.jpg" alt="tailandia">
+                        <div class="d-flex flex-wrap align-items-start">
+                            <div class="modal-price col-md-8 align-items-center">
+                                <span>Desde USD</span>
+                                <span class="price">$4500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-6 ml-auto">
+                        <ul>
+                            <li><strong>Inicio /Final Ciudad:</strong><span> Bangkok / Phuket</span></li>
+                            <li><strong>Duración: </strong><span></span>12 Dias</span></li>
+                            <li> <strong>Puntos Culminantes: </strong><span>Visita de la ciudad y los templos del Gran Palacio, el Templo de Wat Pho, el Templo de Mármol. En Chiang Rai paseo en camioneta a los poblados de las montañas donde viven algunas etnias como los “Akha”, procedentes de Tíbet. “Triángulo de Oro” del río Mekong, octavo río más largo del mundo, que delimita la frontera entre Tailandia, Birmania y Laos. El viaje finaliza en las islas Phi Phi, en Phuket, recorriendo las mejores playas del golfo del Tailandia</span></li>
+                        </ul>
+                        <div class="col-md-12 align-content-center">
+                            <a href="mailto:info@deviajes.com?Subject=Consulta%20Web%20por%20paquete%20Tailandia" class="btn btn-success">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal China-->
+<div class="modal fade" id="modal-china" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="close-modal d-flex justify-content-end">
+                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><h3>CHINA IMPERIAL</h3></div>
+                    <div class="col-md-12 ml-auto"><span>Tour clásico de China de 9 días: Beijing, Xi'an y Shanghai recorriendo las ciudades más importantes del Imperio</span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <img src="./img/china.jpg" alt="china">
+                        <div class="d-flex flex-wrap align-items-start">
+                            <div class="modal-price col-md-8 align-items-center">
+                                <span>Desde USD</span>
+                                <span class="price">$5000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-6 ml-auto">
+                        <ul>
+                            <li><strong>Inicio /Final Ciudad:</strong><span> Pekin / Shanghai</span></li>
+                            <li><strong>Duración: </strong><span></span>9 Dias</span></li>
+                            <li> <strong>Puntos Culminantes: </strong><span> La Gran Muralla, Ciudad Prohibida, Guerreros y Caballos de Terracota, Antigua MUralla de la Ciudad de Xi'an, Pagoda Gigante del Ganso Salvaje, Pueblo Acuático de Zhujiajiao</span></li>
+                        </ul>
+                        <div class="col-md-12 align-content-center">
+                            <a href="mailto:info@deviajes.com?subject=Consulta%20Web%20por%20paquete%20China" class="btn btn-success">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal Paris-->
+<div class="modal fade" id="modal-paris" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="close-modal d-flex justify-content-end">
+                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><h3>PARIS</h3></div>
+                    <div class="col-md-12 ml-auto"><span>Conoce los secretos de la ciudad de la Luz en una semana. Incluye translados y entradas a museos!</span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <img src="./img/paris.jpg" alt="paris">
+                        <div class="d-flex flex-wrap align-items-start">
+                            <div class="modal-price col-md-8 align-items-center">
+                                <span>Desde USD</span>
+                                <span class="price">$4000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-6 ml-auto">
+                        <ul>
+                            <li><strong>Inicio /Final Ciudad:</strong><span> Paris / Paris</span></li>
+                            <li><strong>Duración: </strong><span></span>7 Dias</span></li>
+                            <li> <strong>Puntos Culminantes: </strong><span> París, El Louvre, Chateau de Versailles, Torre Eiffel y la catedral gótica de Notre Dame, Avenue des Champs-Élysées, Montmartre, Moulin Rouge</span></li>
+                        </ul>
+                        <div class="col-md-12 align-content-center">
+                            <a href="mailto:info@deviajes.com?subject=Consulta%20Web%20por%20paquete%20Paris" class="btn btn-success">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal Roma-->
+<div class="modal fade" id="modal-roma" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="close-modal d-flex justify-content-end">
+                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><h3>ROMA</h3></div>
+                    <div class="col-md-12 ml-auto"><span>Tour a los mas famosos monumentos de Roma. Conozca la Ciudad Eterna a través de sus pintorescas calles.</span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <img src="./img/roma.jpg" alt="roma">
+                        <div class="d-flex flex-wrap align-items-start">
+                            <div class="modal-price col-md-8 align-items-center">
+                                <span>Desde USD</span>
+                                <span class="price">$3500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-6 ml-auto">
+                        <ul>
+                            <li><strong>Inicio /Final Ciudad:</strong><span> Roma / Roma</span></li>
+                            <li><strong>Duración: </strong><span></span>10 Dias</span></li>
+                            <li> <strong>Puntos Culminantes: </strong><span> El Coliseo, Fontana di Trevi, Vaticano, Panteon, PLaza Navona, Foro Romano, PLaza de San Pedro y muchos lugares más!</span></li>
+                        </ul>
+                        <div class="col-md-12 align-content-center">
+                            <a href="mailto:info@deviajes.com?subject=Consulta%20Web%20por%20paquete%20Roma" class="btn btn-success">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal Nueva York-->
+<div class="modal fade" id="modal-ny" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <div class="close-modal d-flex justify-content-end">
+                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><h3>NUEVA YORK</h3></div>
+                    <div class="col-md-12 ml-auto"><span>Conoce emblemas como la Estatua de la Libertad, la Quinta Avenida o el Empire States y disfruta de días libres.</span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <img src="./img/ny.jpg" alt="china">
+                        <div class="d-flex flex-wrap align-items-start">
+                            <div class="modal-price col-md-8 align-items-center">
+                                <span>Desde USD</span>
+                                <span class="price">$3500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-6 ml-auto">
+                        <ul>
+                            <li><strong>Inicio /Final Ciudad:</strong><span> Nueva York / Nueva York</span></li>
+                            <li><strong>Duración: </strong><span></span>6 Dias</span></li>
+                            <li> <strong>Puntos Culminantes: </strong><span> Central Park, auditorio Lincoln y el edificio The Dakota, donde vivió John Lennon. Barrio de Harlem, Quinta Avenida,Rockefeller Center, los barrios de Greenwich Villags, SoHo, Chinatown y Little Italy. También descubriremos el distrito financiero de Wall Street, Estatua de la Libertad.</span></li>
+                        </ul>
+                        <div class="col-md-12 align-content-center">
+                            <a href="mailto:info@deviajes.com?subject=Consulta%20Web%20por%20paquete%20Nueva%20York" class="btn btn-success">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Newsletter -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Te suscribiste a nuestro newsletter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Muchas gracias por sumarte a nuestro newsletter!<br>
+        Pronto vas a recibir novedades!
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+    </div>
+    </div>
+</div>
+</div>
+    <section class="copyright"><p>Designed by <a href="https://www.linkedin.com/in/agustina-gramajo-92840a5b/">Agustina Gramajo</a></p></section>
 <!-- jQuery Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <!-- Popper Bootstrap -->
@@ -254,10 +492,10 @@ new WOW().init();
 <script>
     baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
 </script>
-<!--Script modal-->
+<!--Script modal newsletter-->
 <script>
-    $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
+$('#myModal').on('shown.bs.modal', function () {
+$('#myInput').trigger('focus')
 })
 </script>
 </body>
