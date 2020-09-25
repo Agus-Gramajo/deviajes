@@ -9,7 +9,7 @@
     <link rel="icon" href="./img/logo_oscuro.png" type="image/png"/>
     <!-- Estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="js/bootstrap.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -100,15 +100,27 @@
 <!--Quienes somos-->
         <section id="about-us">
             <h2>¿Quienes somos?</h2>
-                <div class="nosotros-container">
-                    <div class="nosotros-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing, elit sed tempor non phasellus facilisis nulla, dictum consequat ligula nascetur erat. Eleifend nisl tempor dictum nunc penatibus hendrerit pulvinar est libero ultricies suscipit, gravida posuere quisque tempus eget facilisis luctus nibh sociosqu conubia, rutrum congue fermentum lacinia facilisi nisi ornare vulputate venenatis commodo. 
-                        </p>
+                <div class="nosotros-container container">
+                    <div class="nosotros-content row">
+                        <div class="col-sm-12 col-md-6">
+                            <p>
+                            Somos una empresa de viajes y turismo localizada en la Ciudad Autónoma de Buenos Aires, dedicada a brindar asesoramiento integral en el rubro.
+                            Nacimos con el sueño de ofrecer a los viajeros toda nuestra experiencia y capacidad en el área, brindando un servicio de alta calidad y adaptándonos a las exigencias de hoy. Contamos con una amplia variedad de ofertas y paquetes turísticos personalizados que el cliente podrá evaluar y cotizar a través de nuestro sitio web</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p>
+                            Tambien podra realizar consultas y dejar opiniones por nuestras redes sociales, respondiendo de manera inmediata a los requerimientos de los clientes.
+                            Nuestra empresa está totalmente orientada hacia las necesidades del cliente, teniendo en cuenta sus preferencias y cultura. Priorizamos siempre su seguridad y que sea una estadía memorable, por eso le ofrecemos comodidad y conveniencia económica en todo momento.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <hr>  
+            <hr>
+    <div class="banner b-3 d-flex justify-content-center flex-wrap align-content-center">
+        <span class="animate__fadeIn">Conocenos...</span>
+    </div>
+      
 <!-- Team -->
 <section id="team" class="pb-5">
     <div class="container">
@@ -492,48 +504,53 @@
     </a>
 </div>
 <!--Footer-->
-    <footer class="footer-bs">
-        <div class="row">
-        	<div class="col-md-4 footer-brand animated fadeInLeft d-flex flex-wrap align-content-center justify-content-center">
-                <a href="index.html"><img src="./img/logo_1.png" alt="logo" width="170" height="170"></a>
-            </div>
-        	<div class="col-md-2 footer-nav animated fadeInUp">
-            	<h4>Menu —</h4>
-            	<div class="col-md-2">
-                    <ul class="pages">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="paquetes.html">Paquetes</a></li>
-                        <li><a href="quienes_somos.html">About Us</a></li>
-                        <li><a href="seguros.html">Seguros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        	<div class="col-md-2 footer-social animated fadeInDown">
-            	<h4>Follow Us</h4>
-            	<ul>
-                	<li><a href="www.facebook.com">Facebook</a></li>
-                	<li><a href="#">Twitter</a></li>
-                	<li><a href="#">Instagram</a></li>
-                	<li><a href="#">RSS</a></li>
+<footer class="footer-bs">
+    <div class="row">
+        <div class="col-md-4 footer-brand animated fadeInLeft d-flex flex-wrap align-content-center justify-content-center">
+            <a href="index.html"><img src="./img/logo_1.png" alt="logo" width="170" height="170"></a>
+        </div>
+        <div class="col-md-2 footer-nav animated fadeInUp">
+            <h4>Menu —</h4>
+            <div class="col-md-2">
+                <ul class="pages">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="quienes_somos.html">About Us</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 footer-ns animated fadeInRight">
-                <h4>Newsletter</h4>
-                <p>Queres enterarte de nuestras novedades?<br> Sumate a nuestro Newsletter</p>
-                    <div class="input-group">
-                        <form id="newsletter" action="#" method="post">
-                        <input type="email" class="form-control" placeholder="Ingresa tu email...">
-                        <span class="input-group-btn">
-                        <a href="#exampleModal" role="button" data-toggle="modal">
-                        <button type="submit" name="boton" class="btn btn-default"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-                        </span>
-                        </form>  
-                    </div>
-                 </p>
-            </div>
         </div>
-    </footer>
+        <div class="col-md-2 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://twitter.com/?lang=es"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://www.tripadvisor.com.ar/"><i class="fa fa-tripadvisor" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+            <img src="./img/footer/iata.png" alt="iata">
+        </div>
+        <div class="col-md-4 footer-ns animated fadeInRight">
+            <h4>Newsletter</h4>
+            <p>Queres enterarte de nuestras novedades?<br> Sumate a nuestro Newsletter</p>
+                <div class="input-group">
+                    <form id="newsletter" action="#" method="post">
+                    <input type="email" class="form-control" placeholder="Ingresa tu email...">
+                    <span class="input-group-btn">
+                    <a href="#exampleModal" role="button" data-toggle="modal">
+                    <button type="submit" name="boton" class="btn btn-default"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    </span>
+                    </form>  
+                </div>
+             </p>
+        </div>
+    </div>
+</footer>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
