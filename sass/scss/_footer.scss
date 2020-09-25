@@ -59,9 +59,11 @@
         }
     } 
     .footer-social {
+        text-align: center;
         ul { 
             list-style:none; 
             padding:0px; 
+            display: inline-flex;
             } 
         h4 {
             font-size: 11px;
@@ -70,6 +72,7 @@
         }
         li { 
             padding:5px 4px;
+            font-size: 1.5rem;
         }
         a { 
             color:rgba(255,255,255,1.00);
@@ -78,6 +81,9 @@
             color:rgba(255,255,255,0.80); 
             text-decoration:none; 
         }
+        img {
+            width: 100%;
+        };
     }
     .footer-ns {
         h4 {
@@ -85,6 +91,7 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             margin-bottom:10px;
+            text-align: left;
         }
         p {
             text-align: left;
@@ -96,7 +103,7 @@
     }
 }
 .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
-    padding:10px 25px; 
+    padding:10px 15px; 
 }
 .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
     border-color: transparent; 
