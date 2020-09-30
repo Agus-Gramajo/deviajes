@@ -205,7 +205,7 @@
 /*Promociones*/
 .gallery-block {
 	padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 40px;
     .heading{
         margin-bottom: 50px;
         text-align: center;
@@ -244,6 +244,28 @@
             padding: 0;
           }
 }
+.controls-top {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5px;
+    a {
+        color: $color-grey;
+    }
+}
+
+}
+/*Eleginos*/
+.eleginos {
+    display: inline-flex;
+    text-align: center;
+    .card {
+        padding: 20px 0 20px 0;
+        i {
+            font-size: 4rem;
+            color: $color-grey;
+            text-align: center;
+        }
+    }
 }
  /* Seguros */
  #seguros {
@@ -252,6 +274,10 @@
      }
      div>p {
          text-align: justify;
+     }
+     i {
+         font-size: 3rem;
+         color: $color-grey;
      }
  }
 .table-wrapper {
@@ -391,5 +417,24 @@
             cursor: pointer;
         }
     }
+}
+/*Medios de pago*/
+.medios-pago {
+    img {
+        width: 100%;
+    }
+    a {
+        text-align: right;
+        padding: 2%;
+        display:scroll;
+        position:fixed;
+        bottom: 40px;
+        right:0px;
+        z-index: 1500;
+        color: black;
+        :hover {
+            transform: scale(1.3);
+        }
+        }
 }
 
