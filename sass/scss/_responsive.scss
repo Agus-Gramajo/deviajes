@@ -5,8 +5,9 @@
             p {display: none;}
         }
     }
+
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     * {
        h1, h2, h3, h4 {
             font-size: 3rem;
@@ -34,10 +35,7 @@
                 color: $color-grey;
         }
     }
-    #header-index .header-main>img {
-        width: 100%;
-        height: 30vh;
-    }
+  
     .footer-bs, .footer-ns {
         margin-bottom: 0;
         padding: 20px 30px;
@@ -73,6 +71,20 @@
             font-size: 3rem;
         } 
     }
+    #header-index {
+        #bg-index>img {
+        width: 100%;
+        height: 30vh;
+        }
+    }
+    .form-arka-plan {
+        display: none;
+    }
+    .slide-full {
+        display: none;
+    }
+
+    
 }
 @media (min-width: 768px) {
     .header-top-center {
@@ -82,9 +94,18 @@
     #msj-sm-seguros {
         display: none;
     }
+    #header-index {
+        #bg-index>img {
+        width: 100%;
+        height: 100vh;
+        }
+    }
+    .slide-mobile {
+        display: none;
+    }
 }
 
-@media (max-width: 992px) and (min-width: 769px) {
+@media (max-width: 992px) and (min-width: 768px) {
     .header-top span {
         display: none;
     }
